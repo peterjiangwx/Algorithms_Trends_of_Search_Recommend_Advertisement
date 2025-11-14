@@ -1,4 +1,4 @@
-query推荐，包括搜推中多个功能模块，query的自动补全，相关query推荐，文末query推荐等
+query推荐，包括搜推中多个功能模块，query的自动补全，相关query推荐，文末query推荐，query纠错等
 
 参考文献：
 
