@@ -30,3 +30,4 @@ query改写主要包括纠错、扩展、同义词替换
 参考文档\
 1、https://zhuanlan.zhihu.com/p/393914267 \
 2、https://github.com/ledmaster/tw-bert \
+3、https://zhuanlan.zhihu.com/p/147935851  
