@@ -9,4 +9,5 @@ query分词有细粒度和粗粒度，粗粒度主要考虑phrase，用来缓解
 词权重主要用于基于基本的文本相关性，比如bm25，另外就是用于非比留的情况，有一些query中的不重要的词可以不用参与召回，避免召回不了目标结果或者相关结果，
 参考文档
 
-1、https://zhuanlan.zhihu.com/p/393914267
+1、https://zhuanlan.zhihu.com/p/393914267\
+2、https://github.com/ledmaster/tw-bert\
