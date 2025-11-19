@@ -4,3 +4,8 @@ induction指的是我们从数据样本中发现共性的能力，而bias即偏�
 通俗理解：归纳偏置可以理解为，从现实生活中观察到的现象中归纳出一定的规则，然后对模型做一定的假设和约束，从而可以起到模型选择的作用\
 广义解释：归纳偏置会促使学习算法优先考虑具有某一些属性的解\
 归纳偏置的作用是使得模型具有了泛化的能力。\
+<img width="992" height="769" alt="image" src="https://github.com/user-attachments/assets/89854014-03f3-4f9c-b9d3-7f25597dea97" />
+<img width="1039" height="255" alt="image" src="https://github.com/user-attachments/assets/558e4510-1416-4184-a79b-f21e8fc232d4" />
+
+**参考文献**\
+1.https://cloud.tencent.com/developer/article/1919136\
