@@ -1,4 +1,4 @@
-<img width="758" height="793" alt="image" src="https://github.com/user-attachments/assets/dda76c0d-0a2e-49d2-8a05-1a693bd91e18" />  
+<img width="758" height="793" alt="image" src="https://github.com/user-attachments/assets/dda76c0d-0a2e-49d2-8a05-1a693bd91e18" />  </br>
 # 1、llm痛点  
 - 幻觉：llm会自信地编造假信息
 - 时效性：llm的训练数据决定了模型的知识范围，对于最新的事件llm不知晓
