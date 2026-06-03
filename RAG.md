@@ -67,4 +67,4 @@
   * embedding微调：通用的开源embedding没有行业专有名词的概念和上下文知识，使用企业内部的行业专属语料，对embedding进行对比学习微调，让他在业务场景下提升能力
 
 总结：工业级标准组合拳  
-** User Query -> HyDE -> 混合检索 -> MetaData过滤 -> Reranker -> LLM生成**
+**User Query -> HyDE -> 混合检索 -> MetaData过滤 -> Reranker -> LLM生成**
