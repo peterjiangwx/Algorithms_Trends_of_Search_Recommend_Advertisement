@@ -58,3 +58,4 @@
 
 **参考文献**  
 1、https://cloud.tencent.com/developer/article/2626356  
+2、https://yingjiezhao.com/zh/articles/From-LLM-to-Agent-Architecture-Evolution/  
