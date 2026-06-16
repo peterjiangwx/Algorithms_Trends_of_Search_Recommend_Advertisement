@@ -1,5 +1,5 @@
 **什么是agent**  
-架构特征
+架构特征  
 <img width="690" height="808" alt="image" src="https://github.com/user-attachments/assets/68a8d1a2-c002-40fa-9bb8-7a97381b5bba" />
 * 核心能力  
   * 自主规划：llm自主分解任务，决定执行步骤
@@ -33,6 +33,25 @@
   * 记忆系统，短期记忆、长期记忆、工作记忆
   * 感知增强，多模态输入处理，RAG，联网搜索
   * 安全控制，输入安全（注入检测），执行安全（权限控制），输出安全（幻觉检测）
+* agent模块组合的典型架构
+  <img width="258" height="618" alt="image" src="https://github.com/user-attachments/assets/03987b3d-1a49-4da3-a574-448b155cd412" />
+* 当前agent开发的核心挑战
+  * 长任务的可靠性：主流应对方法，plan+replan，reflection
+  * 上下文爆炸：应对方法，压缩、检索、分层记忆
+  * 工具选择困惑：应对方法，工具描述精炼、分组、skill路由
+  * 幻觉与误调用：constraint decoding，validation
+  * 成本失控：prompt cache，小模型路由
+  * 多步累积错误：step-level eval，早停
+  * 可解释性：tracing，reasoning visualization
+  * 安全漏洞：输入审查、沙箱、权限分级
+  * 个性化记忆：用户级memory store
+  * 可复用性：skills，subagents标准化
+* 一句话总结
+  当前agent开发的核心模块可以归纳为“一脑、二手、三库、四护”，所有这些模块的本质都是为了解决LLM的三大局限：无状态（->Memory）、无知识（-> RAG）、无行动（->Tools）,并通过编排+规划+反思 让agent能完成多步、长程、复杂任务
+  * 一脑：LLM core 推理决策大脑
+  * 二手：Tool Use（工具调用）+ Multi-Agent(分身协作)
+  * 三库：Memory(记忆库) + Rag(知识库) + Skills/MCP（技能库）
+  * 四护：Orchestrator(编排) + Planning(规划，包括反思reflection) + Eval/Tracing(可观测) + Safety(护栏)
 **agent技术架构的六大核心模块**  
 从成功实现的视角看一个成熟的agent是一套精密的系统工程，它由六大核心模块协作，共同构建了一个完整的智能闭环  
 * 模块1 感知
