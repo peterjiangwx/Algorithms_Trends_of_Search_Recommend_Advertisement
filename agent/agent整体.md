@@ -51,7 +51,7 @@
   * 一脑：LLM core 推理决策大脑
   * 二手：Tool Use（工具调用）+ Multi-Agent(分身协作)
   * 三库：Memory(记忆库) + Rag(知识库) + Skills/MCP（技能库）
-  * 四护：Orchestrator(编排) + Planning(规划，包括反思reflection) + Eval/Tracing(可观测) + Safety(护栏)
+  * 四护：Orchestrator(编排) + Planning(规划，包括反思reflection) + Eval/Tracing(可观测) + Safety(护栏)  
 **agent技术架构的六大核心模块**  
 从成功实现的视角看一个成熟的agent是一套精密的系统工程，它由六大核心模块协作，共同构建了一个完整的智能闭环  
 * 模块1 感知
