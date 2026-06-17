@@ -122,8 +122,9 @@ llm是agent的大脑，在流程中承担推理、规划、决策、生成四大
       <img width="397" height="165" alt="image" src="https://github.com/user-attachments/assets/14969c18-fc5b-4a7f-a170-038098822427" />
     * 解法3：工具调用权限分级
       <img width="410" height="222" alt="image" src="https://github.com/user-attachments/assets/ebcc59a4-c10f-4537-b682-485af81b49b9" />  
-<img width="511" height="916" alt="image" src="https://github.com/user-attachments/assets/28b87359-8ed7-4506-8202-f7a88cf6ddb6" />  
-不同规模的Agent的LLM core的演进路径
+<img width="511" height="916" alt="image" src="https://github.com/user-attachments/assets/28b87359-8ed7-4506-8202-f7a88cf6ddb6" />
+
+不同规模的Agent的LLM core的演进路径  
 * MVP阶段（最小可行产品），直接调用大模型sdk，
 * 中期阶段（关键能力补齐）
   * provider抽象、Streaming、Retry&Fallback、Prompt cache、cost tracking、Json mode
@@ -142,17 +143,17 @@ llm是agent的大脑，在流程中承担推理、规划、决策、生成四大
 * 多轮对话的角色漂移
   * 痛点：多轮对话后llm忘了自己是谁
   * 应对：关键节点强化system prompt，用“Reminder： You are。。。”中插、定期重置+摘要
-一句话总结
+**一句话总结**  
 它的痛点可以归为四大类  
 * 性能成本：延迟、成本、context限制 -> 用cache + Router + 压缩 + 流式 解决
 * 可靠性：幻觉、格式错、api抖动 -> 用json mode + 重试 + 降级 + Reflection 解决
 * 决策力：工具选错、死循环、长程退化 -> 用CoT + 工具精炼 + Loop Detector + Memory 解决
 * 工程化：供应商绑定、调试难、安全 -> 用provider抽象 + Tracing + Prompt版本化 + 安全护栏 解决
-设计LLM core 模块的核心原则
+设计LLM core 模块的核心原则  
 * 抽象Provider：解耦模型，支持任意切换
 * 中间件化：横切关注点（cache、cost、safety、trace），用装饰器组合
 * 预算化管理：Token、成本、延迟都有显式预算
 * 可观测性内建：每次调用都可trace，可replay，可eval
-* 降级路径：任何环节失败都有兜底，不然agent卡死
+* 降级路径：任何环节失败都有兜底，不然agent卡死  
 
 **一个成熟的LLM core模块，应该让上层agent完全不感知模型细节、provider差异、容错处理，他对外提供的就是一个稳定、可靠、可观测的智能调用接口，这是agent系统从原型走向生产的最关键的工程屏障**
