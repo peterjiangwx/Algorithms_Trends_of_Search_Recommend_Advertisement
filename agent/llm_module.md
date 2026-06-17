@@ -1,8 +1,8 @@
 
 **LLM core**
 llm是agent的大脑，在流程中承担推理、规划、决策、生成四大角色，也是所有其他模块的核心调用对象  
-* 在agent流程中的位置
-  <img width="347" height="448" alt="image" src="https://github.com/user-attachments/assets/e498bab3-978a-4d8e-851d-6ef4edf44f04" />
+* 在agent流程中的位置  
+  <img width="347" height="448" alt="image" src="https://github.com/user-attachments/assets/e498bab3-978a-4d8e-851d-6ef4edf44f04" />  
 * llm core的四个角色
   * Reasoner(推理者)
     * 理解用户意图
@@ -33,7 +33,7 @@ llm是agent的大脑，在流程中承担推理、规划、决策、生成四大
     * stop Reason（结束原因）
     * Token Usage（token消耗统计）
 * LLM core的内部分层
-  <img width="352" height="422" alt="image" src="https://github.com/user-attachments/assets/da5ab9e9-93ce-4c76-8c58-28728fc1f48f" />
+  <img width="352" height="422" alt="image" src="https://github.com/user-attachments/assets/da5ab9e9-93ce-4c76-8c58-28728fc1f48f" />  
 * LLM core的核心痛点全景以及对应解法
   * 1、性能与成本痛点
     * 延迟高：单次调用延迟高，流式才能勉强可用，多轮agent任务累积延迟严重
