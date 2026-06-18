@@ -10,8 +10,12 @@
 <img width="540" height="580" alt="image" src="https://github.com/user-attachments/assets/06512b8b-fa46-4eb6-906d-3e9ed8bdb645" />
 
 
-<img width="1141" height="490" alt="image" src="https://github.com/user-attachments/assets/7d31b4ef-a7eb-4622-9b2f-66a249a9cb2a" />
+<img width="1141" height="490" alt="image" src="https://github.com/user-attachments/assets/7d31b4ef-a7eb-4622-9b2f-66a249a9cb2a" />  
 
+<img width="1672" height="250" alt="image" src="https://github.com/user-attachments/assets/2f9699b1-8405-44c1-ae56-4e61d82229e2" />  
+
+**一句话经验：好的 safety & guardrails 系统不是"加几个过滤器"，而是 "在每一层都假设其他层会失效，独立提供防护，并能被观测、被评测、被持续对抗" —— 输入层防注入、planning 层防漂移、tool 层防越权、output 层防泄漏、loop 层防失控、system 层有 kill
+  switch + 审计 + 回滚。Agent 能被推入多深的真实场景，不取决于它多聪明，取决于它在最坏情况下会不会出大事——这是 2026 年决定 agent 产品能否进入医疗、金融、政务等受监管市场的关键分水岭。Guardrails 不是减速带，是让 agent 能开上高速的护栏**
 
 
 
