@@ -59,3 +59,10 @@ tool use是agent跨越语言模型和真实世界边界的执行通道，LLM本�
   * 用分隔符/结构化字段隔离工具输出与系统指令
   * 高敏感工具，即使LLM想调，也要走独立confirm channel
   * 对MCP远程工具要做来源认证+输出审查
+
+<img width="1238" height="469" alt="image" src="https://github.com/user-attachments/assets/63bb1828-9ff6-4f2d-9ce0-62d4a39021cd" />  
+
+<img width="1652" height="183" alt="image" src="https://github.com/user-attachments/assets/3ac7a03b-35d5-4496-a314-5c68e17eb662" />  
+
+**一句话经验：好的 tool use 系统不是"给 LLM 更多工具"，而是 "让 LLM 在每个时刻只看到该看到的工具，按 schema 调用，按预算执行，按权限放行，按 trace 留痕" —— 工具描述当 prompt 优化、错误信息当训练信号、副作用当风险等级、输出当资产管理。Agent的天花板，往往不在模型，而在工具系统的工程深度**
+
