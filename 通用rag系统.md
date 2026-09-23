@@ -8,3 +8,4 @@
 
 
 * 参考：https://github.com/lizhe2004/Awesome-LLM-RAG-Application
+* https://zhuanlan.zhihu.com/p/17693009207
